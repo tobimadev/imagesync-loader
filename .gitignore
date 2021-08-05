@@ -1,0 +1,5 @@
+/buildtarget
+/downloads
+.idea/
+.vscode/
+.DS_Store
