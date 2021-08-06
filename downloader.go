@@ -42,7 +42,7 @@ func (srv *server) download(ctx context.Context, url string) error {
 	if exists, _ := fileStatus(reportDir); exists {
 		return fmt.Errorf("Report directory '%s' already exist", reportDir)
 	}
-	if err := os.Mkdir(reportDir, dirPerm); err != nil {
+	if err := os.MkdirAll(reportDir, dirPerm); err != nil {
 		return fmt.Errorf("Report directory '%s' could not be created. cause=%+v", reportDir, err)
 	}
 
