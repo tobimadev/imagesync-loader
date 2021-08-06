@@ -15,7 +15,6 @@ builds:
       - darwin
 archives:
   - format: binary
-    name_template: "{{ .ProjectName }}_{{ .Version }}"
     replacements:
       darwin: Darwin
       linux: Linux
